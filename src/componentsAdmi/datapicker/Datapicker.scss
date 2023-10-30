@@ -1,0 +1,21 @@
+.input-like-button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  .input-like-button:focus {
+    border-color: #007bff; /* Cambia el color del borde cuando el botón está enfocado */
+  }
+  .picker{
+    width: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none; border-color: #007bff;
+    opacity: 0;
+  }

@@ -1,0 +1,190 @@
+.page__compraExitosa{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+    margin: 5rem 10rem;
+    font-family:  Arial, sans-serif;
+}
+
+.compra__exitosa{
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    background-color: rgb(251, 251, 232);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    
+    &__icono{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__titulo{
+        font-weight: bolder;
+    }
+}
+
+.info__titulo{
+    display: flex;
+    justify-content: space-between;
+
+    &__facturacion{
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(226, 232, 255);
+        color: rgb(93, 102, 144);
+        padding: 1rem;
+    }
+}
+
+.info__compra{
+    display: flex;
+    gap: 12rem;
+
+    &__article{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    &__span{
+        color: rgb(134, 134, 134);
+        font-weight: bolder; 
+    }
+
+    &__divPago{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__tarjeta{
+        width: 40px;
+    }
+}
+
+.compraFinal{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 2rem;
+    width: 35%;
+    padding: 1.5rem;
+    // margin-top: 3rem;
+
+    &__img{
+        width: 80px;
+    }
+    &__figure{
+        width: 22%;
+       
+    }
+
+    &__titulo{
+        color: rgb(63, 63, 63);
+    }
+
+    &__article{
+        display: flex; 
+        gap:2rem;
+        height: 10rem
+    }
+   
+    &__funcion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__span{
+        color:rgb(114, 114, 114); 
+        margin-top: 2rem;
+    }
+    &__divTotal{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        margin-right: 3rem;
+    }
+
+    &__boletosDiv2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__total{
+        font-weight: bolder;
+        color: rgb(79, 79, 79);
+    }
+    &__valor{
+        font-size: 24px;
+        font-weight: bolder;
+        color: rgb(79, 79, 79);
+    }
+
+    &__boton{
+        height: 4rem;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(28, 28, 110);
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+}
+
+@media(max-width: 500px){
+    .page__compraExitosa{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem; 
+        margin: 6rem 3rem;
+    }
+    
+    .compra__exitosa{
+        margin-top: 2rem;
+    }
+    
+    .info__titulo{
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+    
+    .info__compra{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 2rem;
+
+        &__article{
+            display: flex;
+            flex-direction: row;
+            gap:1rem;
+        }
+    
+    
+        &__tarjeta{
+            width: 30px;
+        }
+    }
+    
+    .compraFinal{
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 2rem;
+        width: 90%;
+        padding: 1.5rem;
+        // margin-top: 3rem;
+    
+    }
+
+}

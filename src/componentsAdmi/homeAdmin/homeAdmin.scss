@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root{
+    --color_azul:#2666ae;
+}
+
+.header1{
+
+    height: 7rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    img{
+        height: 14rem;
+        width: 15rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .header__nav1{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header__nav__button1{
+        background-color: var(--color_azul);
+        height: 30px;
+        width: 7rem;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        font-weight: bolder;
+    
+    }
+    .header__nav__button1:hover{
+        background-color: #4d97ec;
+    }
+
+    &__form1{
+        display: flex;
+        color: white;
+        gap: 2rem;
+
+        &__select1{
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+    .div__perfil1{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img{
+            border-radius: 20px;
+            width: 45px;
+            height: 42px;
+            margin-top: 16px;
+        }
+        .div__perfil-dos1{
+            display: flex;
+            flex-direction: column;
+           
+            .perfil__titulo1{
+                color: white;
+                font-size: 19px;
+            }
+            .perfil__nombre1{
+                color: white;
+                opacity: 50%;
+            }
+        }
+    }
+
+    .material-symbols-outlined{
+        cursor: pointer;
+    }
+
+    .valores1{
+        color: white;
+    }
+
+    &__icono{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50px;
+        background-color: var(--color_azul);
+        border:none; 
+    }
+    &__icono:hover{
+        background-color: #4d97ec;
+    }
+
+    
+}
+
+.cartelera1{
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.material-symbols-outlined {
+    color: white;
+}
+
+.label1{
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+
+.select1{
+    border: 1px solid #e7e7e7;;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: #e7e7e7;
+    background-color: black;
+    font-size: 12px;
+}
+
+.container__main1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 8%;
+    .container__div1{
+        width: 19%;
+        padding: 20px 20px 60px 20px;
+        border-radius: 10px;
+        background: rgb(255, 254, 254);
+        border: none;
+        box-shadow: 8px 3px 13px -2px #dfd8d8;
+        margin: 10px;
+        border: none;
+        height: 500px;
+        p{
+            margin: 0;
+        }
+        h3{
+            margin: 0;
+        }
+        .imagen__pelicula1{
+            width: 21.5rem;
+            border-radius: 10px;
+        }
+    }
+    .container__div1:hover{
+        box-shadow: 3px 1px 18px 2px;
+        cursor: pointer;
+        .imagen__pelicula{
+            transform:scale(0.9);
+            transition: 1s;
+        }
+    }
+    
+}
+
+@media (max-width: 900px)  {
+    .header1{
+        width: 100%;
+        display: flex;
+       
+        img{
+            height: 20rem;
+            width: 20rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        .header__nav1{
+            display: none;
+        }
+        .div__perfil1{
+            display: none;
+        }
+        .container__main1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .container__div1{
+                width: 40%;
+                .imagen__pelicula1{
+                    width: 70%;
+                    margin-left: 14%;
+                }
+            }
+    
+        }
+    }
+}
+
+
+@media(max-width: 900px){
+    .header1{
+        width: 100%;
+        display: flex;
+       
+        img{
+            height: 20rem;
+            width: 20rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        .header__nav1{
+            display: none;
+        }
+        .div__perfil1{
+            display: none;
+        }
+    }
+    .container__main1{
+        display: flex;
+        flex-direction: column;
+        .container__div1{
+            width: 80%;
+            .imagen__pelicula1{
+                width: 70%;
+                margin-left: 14%;
+            }
+        }
+
+    }
+}

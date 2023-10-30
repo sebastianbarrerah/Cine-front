@@ -1,0 +1,263 @@
+.page {
+    margin: 4rem;
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 2rem;
+}
+
+.pago {
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+.divForm{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form {
+    margin: 2rem;
+    display: flex;
+    // flex-direction: column;
+    gap: 8rem;
+
+
+    &__datos {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 90%;
+    }
+
+    &__span {
+        font-weight: bolder;
+    }
+
+    &__input {
+        border: none;
+        border-radius: 5px;
+        height: 3rem;
+        padding-left: 1rem;
+        background-color: rgb(226, 226, 226);
+    }
+
+    &__datosTarjeta {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        width: 90%;
+    }
+}
+
+.compra__boletosDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.compra__boletosButton {
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(165, 165, 165);
+    color: white;
+    font-weight: bolder;
+    width: 70%;
+    margin-left: 5rem;
+    cursor: pointer;
+    // position: relative;
+    // 
+    // left: 62rem;
+    // bottom: 15rem 
+}
+
+.compra__boletosButton:hover {
+    background-color: rgb(9, 31, 89);
+}
+
+.numero__tarjeta{
+    display: flex;
+
+    &__tarjeta{
+        border: none;
+        height: 3rem;
+        padding-left: 1rem;
+        background-color: rgb(226, 226, 226);
+        width: 90%;
+        border-top-left-radius: 5px; 
+        border-bottom-left-radius: 5px; 
+        
+    }
+
+    &__visa{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(226, 226, 226);
+    }
+
+    &__mastercard{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(226, 226, 226);
+    }
+
+     &__american{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(226, 226, 226);
+        padding: 5px;
+        border-top-right-radius: 5px; 
+        border-bottom-right-radius: 5px; 
+    }
+}
+
+.span__errors{
+    font-size: 13px;
+    color: rgb(162, 20, 20);
+}
+
+@media(max-width: 500px){
+    .page {
+        margin: 1rem;
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .pago {
+        margin-left: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: Arial, sans-serif;
+        width: 100%;
+        &__titulo{
+            font-size: 18px;
+            margin-left: 2rem;
+        }
+        &__span{
+            margin-left: 2rem;
+        }
+    }
+    .divForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-left: 1rem;
+    }
+    
+    .form {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    
+    
+        &__datos {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 90%;
+            margin: 0;
+        }
+    
+        &__span {
+            font-weight: bolder;
+        }
+    
+        &__input {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            height: 3rem;
+            padding-left: 1rem;
+            background-color: rgb(226, 226, 226);
+        }
+    
+        &__datosTarjeta {
+            align-items: center;
+            display: flex;
+            gap: 2rem;
+            width: 90%;
+        }
+    }
+    
+    .compra__boletosDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .compra__boletosButton {
+        height: 3rem;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(165, 165, 165);
+        color: white;
+        font-weight: bolder;
+        width: 70%;
+        margin-left: 5rem;
+        cursor: pointer;
+        // position: relative;
+        // 
+        // left: 62rem;
+        // bottom: 15rem 
+    }
+    
+    .compra__boletosButton:hover {
+        background-color: rgb(9, 31, 89);
+    }
+    
+    .numero__tarjeta{
+        display: flex;
+    
+        &__tarjeta{
+            border: none;
+            height: 3rem;
+            padding-left: 1rem;
+            background-color: rgb(226, 226, 226);
+            width: 90%;
+            border-top-left-radius: 5px; 
+            border-bottom-left-radius: 5px; 
+            
+        }
+    
+        &__visa{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(226, 226, 226);
+        }
+    
+        &__mastercard{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(226, 226, 226);
+        }
+    
+         &__american{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(226, 226, 226);
+            padding: 5px;
+            border-top-right-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+        }
+    }
+    
+    .span__errors{
+        font-size: 13px;
+        color: rgb(162, 20, 20);
+    }
+
+}

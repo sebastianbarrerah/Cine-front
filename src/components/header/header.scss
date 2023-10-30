@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root{
+    --color_azul:#2666ae;
+}
+
+.header{
+    height: 11rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    z-index: -1;
+    font-family: Arial, sans-serif;
+
+    &__figure{
+        height: 10rem;
+    }
+
+    &__img{
+        height: 7rem;
+        margin-top: 1rem;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__nav__button{
+        background-color: var(--color_azul);
+        height: 3rem;
+        width: 9rem;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        font-weight: bolder;
+    }
+    &__nav__button:hover{
+        background-color: #4d97ec;
+    }
+
+    &__form{
+        display: flex;
+        color: white;
+        gap: 2rem;
+
+        &__select{
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .valores{
+        color: white;
+    }
+
+    &__icono{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50px;
+        background-color: var(--color_azul);
+        border:none; 
+    }
+    &__icono:hover{
+        background-color: #4d97ec;
+    }
+    
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.label{
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+
+.select{
+    border: 1px solid #e7e7e7;;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: #e7e7e7;
+    background-color: black;
+    font-size: 12px;
+}
+
+.menu__div{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+
+
+@media(max-width: 500px){
+    .header{
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        z-index: -1;
+        margin-bottom: 7rem;
+    
+        &__figure{
+            height: 3rem;
+        }
+    
+        &__img{
+            height: 3rem;
+            margin-top: 0;
+            position: relative;
+            left: 17rem;
+        }
+    
+        &__nav{
+            display: none;
+        }
+    
+        &__nav__button{
+            display: none;
+        }
+       
+    
+        &__form{
+            display: flex;
+            color: white;
+            gap: 4rem;
+    
+            &__select{
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    
+        .valores{
+            color: white;
+        }
+    
+        &__icono{
+            height: 3rem;
+            width: 3rem;
+          
+        }
+        
+    }
+    
+    .material-symbols-outlined {
+        color: white;
+    }
+    
+    .label{
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        font-size: 16px;
+        position: relative;
+        top: 5rem;
+        right: 5rem;
+        color: black;
+        text-align: center;
+   
+    }
+    
+    .select{
+        border: 1px solid #e7e7e7;;
+        height: 3rem;
+        padding: 0.3rem;
+        border-radius: 10px;
+        color: #e7e7e7;
+        background-color: black;
+        font-size: 12px;
+        position: relative;
+        top: 5rem;
+        right: 5rem;
+    }
+    .menu__div{
+        display: block;
+    }
+
+    .menu{
+        font-size: 20px;
+        margin-right: 1rem;
+        position: relative;
+        bottom: 0.1rem; 
+    }
+
+}

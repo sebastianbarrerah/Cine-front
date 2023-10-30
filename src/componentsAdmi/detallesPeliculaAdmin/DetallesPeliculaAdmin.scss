@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root{
+    --color_azul:#2666ae;
+}
+
+body{
+    background-color: white;
+}
+
+.header2{
+   
+
+    height: 52rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    .header__img2{
+        height: 7rem;
+        width: 22rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+
+    .div__perfil2{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        left: 25%;
+        top: 10px;
+        img{
+            border-radius: 20px;
+            width: 45px;
+            height: 42px;
+            margin-top: 16px;
+        }
+        .div__perfil-dos2{
+            display: flex;
+            flex-direction: column;
+           
+            .perfil__titulo2{
+                color: white;
+                font-size: 19px;
+            }
+            .perfil__nombre2{
+                color: white;
+                opacity: 50%;
+            }
+        }
+    }
+
+    .material-symbols-outlined{
+        cursor: pointer;
+        right: 40px;
+        bottom: 10px;
+        position: relative;
+    }
+
+    .valores{
+        color: white;
+    }
+
+    
+}
+
+.div__peliculas{
+    .figure__img{
+        position: absolute;
+        .imagen1{
+            position: relative;
+            bottom: 44rem;
+            left: 4rem;
+            width: 37rem;
+            height: 47rem;
+            z-index: 1;
+        }
+        .imagen2{
+            position: relative;
+            bottom: 90rem;
+            width: 130rem;
+            height: 41rem;
+            left: 2.5rem;
+            object-fit: cover;
+        }
+    }
+    .informacion{
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        position: absolute;
+        bottom: 17rem;
+        left: 50rem;
+        color: white;
+        h1{
+            width: 25%;
+            text-align: start;
+        }
+        .infomacion__extra{
+            display: flex;
+            gap: 10px;
+            color: black;
+            span{
+                padding: 10px;
+                border-radius: 15px;
+                width: fit-content;
+                background-color: white;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+    .descripcion{
+        width: 30%;
+        position: absolute;
+        left: 3%;
+        top: 96%;
+        display:flex;
+        flex-direction: column;
+        span{
+            margin-bottom: 40px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+    }
+
+    .tiempo__lugar{
+        display: flex;
+        gap: 18px;
+        position: absolute;
+        left: 90rem;
+        bottom: 30rem;
+        display: flex;
+        flex-direction: column;
+        .container__tiempo{
+            display: flex;
+            gap: 10px;
+            position: relative;
+            top: 81rem;
+            width: 50%;
+            right: 35rem;
+            align-items: center;
+            .tiempo{
+                text-align: center;
+                padding: 12px;
+                background-color: #2666ae;
+                color: white;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+        .container__lugar{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(229, 229, 229);
+            border-radius: 10px;
+            gap: 22px;
+            position: relative;
+            right: 39rem;
+            top: 83rem;
+            width:100vh;
+           
+            .separador{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                button{
+                    padding: 10px;
+                    background-color: aliceblue;
+                    border-radius: 16px;
+                    cursor: pointer;
+                    border-color: #5a5ac3;
+                    color: #5a5ac3;
+                    margin-left: 100px;
+                    width: 30%;
+                }
+                span{
+                    background-color: aliceblue;
+                    padding: 1px;
+                    border-radius: 23px;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+            .item:hover{
+                background-color: rgb(199, 197, 197);
+            }
+            .info__seleccion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                .hora__funcion{
+                    padding: 10px;
+                    background-color: aliceblue;
+                    border-radius: 16px;
+                    cursor: pointer;
+                    border-color: #5a5ac3;
+                    color: #5a5ac3;
+                    width: 15%;
+                    margin-left: 10px;
+                }
+                .container__iconos{
+                    display: flex;
+                }
+                .material-symbols-outlined{
+                    display: none;
+                }
+                .hora__funcion:hover{
+                    background-color: rgb(199, 197, 197);
+                    .mostrar{
+                        color: black;
+                        display: block;
+                        input{
+                            width: 30px;
+                        }
+                    }
+                }
+                .material-symbols-outlined{
+                    color: rgb(26, 24, 24);
+                    cursor: pointer;
+                }
+            }
+            .visible {
+                display: block;
+            }
+            
+            .oculto {
+                display: none;
+                
+        }
+    } 
+}
+
+
+
+
+@media(max-width: 500px){
+    .header2{
+        width: 100%;
+        .figure__img{
+            margin-left: 5%;
+        }
+        .div__perfil2{
+            display: none;
+        }
+        span{
+            display: none;
+        }
+    }
+    .div__peliculas{
+        .informacion{
+            display: none;
+        }
+        .imagen2{
+            display: none;
+        }
+        .imagen1{
+            position: relative;
+            bottom: 44rem;
+            left: 4rem;
+            width: 36rem;
+            height: 48rem;
+        }
+    }
+    .descripcion{
+        text-align: center;
+        margin-left: 4%;
+        width: 80%;
+        margin-top: 70px; 
+    }
+    .tiempo__lugar{
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        .container__tiempo{
+            width: 100%;
+            right: 0;
+            top: 90rem;
+        
+        }
+        .container__lugar{
+            width: 90%;
+            position: absolute;
+            top: 100rem;
+            right: 5rem;
+           
+            .info__seleccion{
+                .hora__funcion{
+                    padding: 8px;
+                    background-color: aliceblue;
+                    border-radius: 16px;
+                    cursor: pointer;
+                    border-color: #5a5ac3;
+                    color: #5a5ac3;
+                    width: 12%;
+                    margin-left: 8px;
+                }
+
+            }
+        }
+    }
+   
+}

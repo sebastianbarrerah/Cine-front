@@ -1,0 +1,102 @@
+h1{
+    margin: 2rem;
+    font-family:  Arial, sans-serif;
+}
+.container__main{
+    font-family:  Arial, sans-serif;
+    margin-left: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .container__div{
+        width: 22%;
+        padding: 20px 20px 60px 20px;
+        border-radius: 10px;
+        background: rgb(255, 254, 254);
+        border: none;
+        box-shadow: 8px 3px 13px -2px #dfd8d8;
+        margin: 10px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        .imagen__pelicula{
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 14px;
+        }
+    }
+    .container__div:hover{
+        box-shadow: 3px 1px 18px 2px;
+        cursor: pointer;
+        .imagen__pelicula{
+            transform:scale(1.1);
+            transition: 1s;
+        }
+    }
+    .container__publico{
+        border: none; 
+        background-color: rgb(221, 230, 227);
+        color: grey;
+        padding: 5px;
+        position: relative;
+        top: 14px; 
+        border-radius: 5px;
+        width: 58%; 
+    }
+    
+}
+
+@media(max-width: 500px){
+    h1{
+        margin: 2rem;
+        margin-top: 5rem;
+        font-size: 25px;
+    }
+    .container__main{
+        margin-left: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .container__div{
+            width: 90%;
+            padding: 20px 20px 20px 20px;
+            border-radius: 10px;
+            background: rgb(255, 254, 254);
+            border: none;
+            box-shadow: 8px 3px 13px -2px #dfd8d8;
+            margin: 10px;
+            border: none;
+            display: flex;
+            flex-direction: row; 
+            gap: 2rem;
+            .imagen__pelicula{
+                width: 42%;
+                border-radius: 10px;
+                margin-bottom: 14px;
+            }
+        }
+        .container__div:hover{
+            box-shadow: 3px 1px 18px 2px;
+            cursor: pointer;
+            .imagen__pelicula{
+                transform:scale(1.1);
+                transition: 1s;
+            }
+        }
+        .container__publico{
+            border: none; 
+            background-color: rgb(221, 230, 227);
+            color: grey;
+            padding: 5px;
+            position: relative;
+            top: 14px; 
+            border-radius: 5px;
+            width: 58%; 
+        }
+        
+    }
+
+}

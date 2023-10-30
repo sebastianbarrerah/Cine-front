@@ -1,0 +1,116 @@
+.seleccionAsientos{
+    display: flex;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    gap: 12rem; 
+}
+
+.asientos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__h5{
+        font-size: 18px;
+        font-weight: lighter;
+    }
+
+    &__sillas{
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__sillasColores{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__pantalla{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(182, 180, 180);
+        font-size: 20px;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-top: 2rem;
+        align-self: center;
+    }
+}
+
+.compra{
+    margin-top: 0;
+    height: max-content;
+
+    &__span{
+        margin-top: 3rem;  
+     }
+}
+
+.compra__boton:hover{
+    background-color: rgb(28, 28, 110);
+}
+
+@media(max-width: 500px){
+    .seleccionAsientos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        gap: 5rem; 
+        width: 100%;
+    }
+
+    .asientos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+        &__h1{
+            margin-top: 2rem;
+            font-size: 18px;
+        }
+    
+        &__h5{
+            font-size: 18px;
+            font-weight: lighter;
+            margin-left: 2rem;
+        }
+    
+        &__sillas{
+            display: flex;
+            gap: 3rem;
+            margin-left: 2rem;
+        }
+    
+        &__sillasColores{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        &__pantalla{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(182, 180, 180);
+            font-size: 15px;
+            padding: 1rem;
+            border-radius: 20px;
+            margin-top: 2rem;
+            align-self: center;
+            height: 3rem;
+        }
+    }
+    
+    
+   .div__sillasGeneradas{
+    width: 102%;
+    margin-left: 3rem;
+   }
+
+}
